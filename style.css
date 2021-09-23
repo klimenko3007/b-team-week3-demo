@@ -1,20 +1,140 @@
-body{
-    background-color: white;
+html, body, * {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1E1E1E;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
 }
 :root {
   --button-l: 57%;
 }
+  
+
+nav {
+  position: sticky;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+a {
+  color: grey;
+  text-decoration: none;
+  transform: scale(.95);
+  transition: transform 200ms;
+  padding: .2em 0;
+}
+
+a:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  text-shadow: 1px 1px 5px black;
+  filter: drop-shadow(0px 0px 10px rgb(34, 13, 13));
+  color: white;
+}
+  
+h1::before {
+  content: "[ Ekaterina, Stephan, Haakon, Carl ]";
+  position: absolute;
+  top: 100%;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4rem;
+  padding-bottom: .2em;
+}
+  
+main {
+margin: 0 auto;
+width: 70%;
+}
+
+code {
+  display: block;
+}
+
+section {
+  /* margin-top: 5rem; */
+  min-height: 100vh;
+  margin-bottom: 4rem;
+  padding-top: 2em;
+}
+
+/* .prime-section {
+  display: flex;
+} */
+
 button {
   background-image: none;
   border: none;
   background-color: hsl(225, 73%, var(--button-l));
   border-radius: .1em;
   color: white;
-  padding: .5em 1em;
-  box-shadow: 1px 1px 3px;
+  padding: .4em 2em;
+  box-shadow: 1px 1px 3px black;
   transition: background-color 150ms;
+  font-size: 1.05rem;
 }
 
 button:hover {
   --button-l: 50%;
+}
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-img {
+  filter: brightness(.6);
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.pictures{
+  max-width: 60%;
+  height: auto;
+  padding-top: 5%;
+}
+
+input {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+
+}
+
+label {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.flexit {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#arrayForm {
+  display: flex;
+  margin-right: 1rem;
 }

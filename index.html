@@ -13,35 +13,55 @@
 </head>
 
 <body>
-  <h1>Howdy, we are B-Team!</h1>
-  <section class="kata-section">
-    <h2 class="kata-header">Prime number kata</h2>
-      <label>Please enter a number</label>
-      <input id="prime-value" type="text">
-      <button class="prime-button" type="button">Submit</button>
-    <p class="prime-result"></p>
-    <img class="prime-img" src="" alt="Hello dummy img">
-  </section>
-  <section class="kata-section">
-    <h2 class="kata-header">FizzBuzz kata</h2>
-      <label>Please array of numbers</label>
-      <form id="arrayForm">
-        <input id="fizz-value" type="number" min="1" max="100">
-        <button class="fizz-push-button" type="submit">Push</button>
-      </form>
-      <p class="array"></p>
-      <button class="fizz-button" type="button">Convert to FizzBuzz</button>
-    <p class="fizz-result"></p>
-    <img class="prime-img" src="" alt="Hello dummy img">
-  </section>
-  <section class="kata-section">
-    <h2 class="roman-header">Roman numerals kata</h2>
-      <label>Please enter a number</label>
-      <input id="roman-value" type="text">
-      <button class="roman-button" type="button">Submit</button>
-    <p class="roman-result"></p>
-    <img class="prime-img" src="" alt="Hello dummy img">
-  </section>
+  <a href="#prime-kata">
+    <section id="welcome">
+      <h1>Howdy, we are B-Team!</h1>
+      <img class="welcome-img" src="norwegian_landscape_display.jpg" alt="">
+    </section>
+  </a>
+  <main>
+    <nav>
+      <a href="#welcome">Welcome</a>
+      <a href="#prime-kata">Prime numbers</a>
+      <a href="#fizz-kata">FizzBuzz</a>
+      <a href="#roman-kata">Roman numerals</a>
+    </nav>
+    <section class="prime-section" id='prime-kata'>
+      <div>
+        <h2 class="kata-header">Prime number kata</h2>
+          <div class="flexit">
+            <label>Please enter a number:</label>
+            <input id="prime-value" type="text">
+            <button class="prime-button" type="button">Submit</button>
+          </div>
+        <code class="prime-result result"></code>
+      </div>
+      <div><img class="pictures" src="primeNumber.png" alt="Hello dummy img"></div>
+    </section>
+    <section class="fizz-section" id="fizz-kata">
+      <h2 class="kata-header">FizzBuzz kata</h2>
+        <label>Please array of numbers</label>
+        <div class="flexit">
+          <form id="arrayForm">
+            <input id="fizz-value" type="number" min="1" max="100">
+            <button class="fizz-push-button" type="submit">Push</button>
+          </form>
+          <button class="fizz-button" type="button">Convert to FizzBuzz</button>
+        </div>
+        <code class="array"></code>
+      <code class="fizz-result result"></code>
+      <br>
+      <img class="pictures" src="fizzbuzz.png" alt="Hello dummy img">
+    </section>
+    <section class="roman-section" id="roman-kata">
+      <h2 class="roman-header">Roman numerals kata</h2>
+        <label>Please enter a number</label>
+        <input id="roman-value" type="text">
+        <button class="roman-button" type="button">Submit</button>
+      <code class="roman-result result"></code>
+      <img class="pictures" src="romanConverter.png" alt="Hello dummy img">
+    </section>
+  </main>
 </body>
 
 </html>

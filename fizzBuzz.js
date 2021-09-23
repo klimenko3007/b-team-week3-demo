@@ -2,13 +2,21 @@ const form = document.querySelector("#arrayForm");
 const fizzButton = document.querySelector('.fizz-button');
 const fizzValueElement = document.querySelector('.fizz-result');
 const arrayElement = document.querySelector('.array')
-const array = [];
+let array = [];
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
+    const input = document.getElementById('fizz-value');
     const inputValue = Number(document.getElementById('fizz-value').value);
+    if (inputValue === 0) {
+        input.focus();
+        return;
+    }
     array.push(inputValue)
-    arrayElement.innerHTML = array.map(element => `<span>${element}</span>` )
+    arrayElement.innerHTML = array.map(element => `<span>${element}</span>`)
+    input.value = '';
+    input.focus();
+    fizzValueElement.innerHTML = '';
 })
 
 
@@ -18,6 +26,7 @@ fizzButton.addEventListener('click', (e) => {
     const fizzArray = fizzBuzz(array)
     console.log(fizzArray)
     fizzValueElement.innerHTML = fizzArray.join(', ')
+    array = [];
 })
 
 
