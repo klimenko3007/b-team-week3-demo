@@ -1,0 +1,20 @@
+body{
+    background-color: white;
+}
+:root {
+  --button-l: 57%;
+}
+button {
+  background-image: none;
+  border: none;
+  background-color: hsl(225, 73%, var(--button-l));
+  border-radius: .1em;
+  color: white;
+  padding: .5em 1em;
+  box-shadow: 1px 1px 3px;
+  transition: background-color 150ms;
+}
+
+button:hover {
+  --button-l: 50%;
+}
