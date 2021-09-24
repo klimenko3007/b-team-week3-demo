@@ -105,15 +105,12 @@ button:hover {
 .welcome-img {
   filter: brightness(.6);
   position: absolute;
-  /* top: 0;
-  left: 0; */
   z-index: -1;
   object-fit: cover;
-  width: 100%;
 }
 
 .pictures{
-  max-width: 60%;
+  max-width: 55%;
   height: auto;
   padding-top: 5%;
 }
