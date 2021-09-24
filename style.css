@@ -22,6 +22,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  transform: translateY(-50%);
 }
 a {
   color: grey;
@@ -71,7 +72,6 @@ section {
   /* margin-top: 5rem; */
   min-height: 100vh;
   margin-bottom: 4rem;
-  padding-top: 2em;
 }
 
 /* .prime-section {
@@ -100,6 +100,7 @@ button:hover {
   align-items: center;
   position: relative;
   overflow: hidden;
+  margin-bottom: 6rem;
 }
 
 .welcome-img {
@@ -107,6 +108,7 @@ button:hover {
   position: absolute;
   z-index: -1;
   object-fit: cover;
+  width: 100%;
 }
 
 .pictures{
